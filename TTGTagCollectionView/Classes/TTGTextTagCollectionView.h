@@ -72,7 +72,6 @@
 @class TTGTextTagCollectionView;
 
 @protocol TTGTextTagCollectionViewDelegate <NSObject>
-@optional
 
 - (BOOL)textTagCollectionView:(TTGTextTagCollectionView *)textTagCollectionView
                     canTapTag:(NSString *)tagText
