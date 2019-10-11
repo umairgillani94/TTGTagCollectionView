@@ -380,6 +380,18 @@
     [self invalidateIntrinsicContentSize];
 }
 
+- (void) changeToRTL {
+    for (int i= 0; i < _tagLabels.count; i++) {
+        _tagLabels[i].label.transform = CGAffineTransformMakeScale(-1, 1);
+    }
+}
+
+- (void) changeToLTR {
+    for (int i= 0; i < _tagLabels.count; i++) {
+        _tagLabels[i].label.transform = CGAffineTransformIdentity;
+    }
+}
+
 - (void)addTag:(NSString *)tag {
     [self insertTag:tag atIndex:_tagLabels.count];
 }
