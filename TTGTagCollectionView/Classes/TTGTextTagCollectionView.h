@@ -155,6 +155,12 @@
 // Reload
 - (void)reload;
 
+// For RTL Support
+- (void)changeToRTL;
+
+// For LTR Support
+- (void)changeToLTR;
+
 // Add tag with detalt config
 - (void)addTag:(NSString *)tag;
 
